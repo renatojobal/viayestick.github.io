@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 
 # Create your views here.
@@ -6,3 +6,7 @@ from django.http import HttpResponse
 # View de testeo
 def hello_world(request):
     return HttpResponse("Hello world!")
+
+# View principal
+def index(request):
+    return HttpResponse("Hello my friend, its working!")
