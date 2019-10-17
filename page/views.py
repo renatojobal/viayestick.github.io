@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponse
 
 # Create your views here.
 
@@ -9,4 +8,4 @@ def hello_world(request):
 
 # View principal
 def index(request):
-    return HttpResponse("Hello my friend, its working!")
+    return render(request, 'page/index.html')
