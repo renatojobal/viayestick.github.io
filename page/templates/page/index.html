@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="index.css">
     <title>Viayestick</title>
 
     {# Cargamos la librería #}
@@ -15,6 +14,10 @@
 
     {# CSS Bootstrap #}
     {% bootstrap_css %}
+
+    {# Cargamos los archivos estaticos #}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'index.css' %}" type="yext/css/">
 
 
 </head>
@@ -24,7 +27,7 @@
     <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="Logo">
+                <img src="https://www.logaster.com.es/static/v3/img/products/logo.png" alt="Logo">
                 Viayestick
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
