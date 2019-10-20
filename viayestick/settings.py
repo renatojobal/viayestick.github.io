@@ -70,11 +70,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'viayestick.wsgi.application'
 
-
 # Database
-# https://docs.djangoproject.com/en 
-# Password validation
-# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
