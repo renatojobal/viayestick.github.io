@@ -1,59 +1,77 @@
 .text-viayestick {
-  color: #97c93e ! important;
+    color: #97c93e ! important;
 }
 
 .btn-viayestick {
-  background-color: #97c93e;
-  color: white;
+    background-color: #97c93e;
+    color: white;
 }
 
 .btn-viayestick:hover {
-  background-color: #82ad36;
+    background-color: #82ad36;
+}
+
+#btn-download-playstore {
+    background-image: url("https://m.xporty.com/media/uploads/1/images/play-store.png");
+    background-repeat: no-repeat;
+    height: 178px;
+    width: 500px;
+    background-position: center;
+}
+
+#btn-download-appstore {
+    background-image: url("http://monedero.com.co/assets/img/app-store.png");
+    background-repeat: no-repeat;
+    height: 178px;
+    width: 500px;
+    background-position: center;
+}
+#btn-download-appstore img {
+    object-fit: fill;
 }
 
 #header img {
-  width: 50px;
+    width: 50px;
 }
 
 #main .carousel-inner img {
-  max-height: 70vh;
-  object-fit: cover;
-  filter: grayscale(70%);
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
 }
 
 #carousel {
-  position: relative;
+    position: relative;
 }
 
 #carousel .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
 }
 
-#carousel .overlay .container,
-#carousel .overlay .row{
-  height: 100%;
+#carousel .overlay .container, #carousel .overlay .row {
+    height: 100%;
 }
 
 #place-time {
-  background-color: #343a40;
-  color: white;
+    background-color: #343a40;
+    color: white;
 }
 
 #place-time img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 #footer {
-  background: linear-gradient(90deg, #1c3643, #273b43 25%, #1e5372)
+    background: linear-gradient(90deg, #1c3643, #273b43 25%, #1e5372)
 }
 
 #footer a {
-  color: white;
+    color: white;
 }
