@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'page.apps.PageConfig',
+    'page.apps.PageConfig', # App depreciada
+    'portal.apps.PortalConfig',
 ]
 
 MIDDLEWARE = [
