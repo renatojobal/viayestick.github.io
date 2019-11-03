@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response
-from portal import models
+from portal.models import Portal
 
 
 
@@ -8,8 +8,10 @@ def index(request):
     
     # Aquí vamos a cargar los datos desde la base de datos
 
-    query = models.Portal.objects.filter(name="Viayestick")[0]
-    
+    query = Portal.objects.filter(name="Viayestick")[0]
+    # Todo: Aquí debería cargarse todo el objeto pero quiero saber una forma fácil de hacerlo
+    # ! Tal vez deba crear un serializador
+    portal = {}
 
-    data_base_data =  {'data':'Holaa'}
-    return render_to_response('portal/index.html', context=data_base_data)
+
+    return render_to_response('portal/index.html', context=portal)
