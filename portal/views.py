@@ -8,10 +8,11 @@ def index(request):
     
     # Aquí vamos a cargar los datos desde la base de datos
 
-    query = Portal.objects.filter(name="Viayestick")[0]
+    queryset = Portal.objects.filter(name="Viayestick")[0]
     # Todo: Aquí debería cargarse todo el objeto pero quiero saber una forma fácil de hacerlo
     # ! Tal vez deba crear un serializador
-    portal = {}
+    context = {}
+    context['portal'] = queryset
 
 
-    return render_to_response('portal/index.html', context=portal)
+    return render_to_response('portal/index.html', context=context)
