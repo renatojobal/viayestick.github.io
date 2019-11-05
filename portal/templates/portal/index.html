@@ -22,7 +22,7 @@
     <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://www.logaster.com.es/static/v3/img/products/logo.png" alt="Logo">
+                <img src={{ portal.logo_url }} alt="Logo">
                 {{ portal.name }}
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -127,9 +127,7 @@
                 <div class="col ml-4">
                     <div class="row mt-20">
                         <div class="col mt-50">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quas. Animi, nam! Dolore,
-                                magnam quae! Non, debitis? Libero reiciendis perspiciatis tenetur, doloremque beatae
-                                amet ducimus incidunt aperiam aut aspernatur ad!</p>
+                            <p>{{ portal.about.content }}</p>
                         </div>
                     </div>
                 </div>
@@ -140,7 +138,7 @@
 
     <!-- Reviews -->
     <section id="reviews" class="mt-5">
-        <div class="container-fluid"
+        <div class="conViayesticktainer-fluid"
             background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdgnmf-cAzcn3SlCtKdAp3RIr8V4Qbs9UboBxFYlMFLXty5xdvCQ&s">
             <div class="row">
                 <div class="col text-center text-uppercase">
